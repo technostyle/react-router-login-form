@@ -24,6 +24,13 @@
     box-sizing: border-box;
 }
 
+.block_error {
+    margin: 8px 10% 8px 10%;
+    width: 80%;
+    color: red;
+    text-align: center;
+}
+
 .button {
     background: #f0f0f0;
     text-align: center;
