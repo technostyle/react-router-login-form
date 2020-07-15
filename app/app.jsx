@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import styles from "./app.css";
 import { AppContent } from "./app-content";
 import { LoginForm } from "./login-form";
@@ -14,13 +8,10 @@ export const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/">
-          <div> hello world</div>
-        </Route>
         <Route path="/content">
           <AppContent />
         </Route>
-        <Route path="/login">
+        <Route exact path="/">
           <LoginForm />
         </Route>
       </Switch>
