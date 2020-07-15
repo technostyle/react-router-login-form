@@ -11,7 +11,6 @@ import { AppContent } from "./app-content";
 import { LoginForm } from "./login-form";
 
 export const App = () => {
-  console.log(useRouteMatch());
   return (
     <Router>
       <Switch>

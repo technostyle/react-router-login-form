@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack -w",
+    "dev": "webpack-dev-server -w --open --hot",
     "format": "prettier --write **/*{html,js,jsx}"
   },
   "author": "",
@@ -23,5 +23,8 @@
     "style-loader": "1.2.1",
     "webpack": "4.43.0",
     "webpack-cli": "3.3.12"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^3.11.0"
   }
 }
