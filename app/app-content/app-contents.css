@@ -7,9 +7,22 @@ body {
     width: 60%;
 }
 .header{
-    /*margin-top: 10px;*/
     background: gainsboro;
 }
+
+.header__logout {
+    background: gainsboro;
+    outline: none;
+    border: none;
+    color: red;
+    float: right;
+    margin: 0;
+    padding: 9px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
 .content {
     background: white;
     margin: 0;

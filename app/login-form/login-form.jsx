@@ -12,7 +12,7 @@ export const LoginForm = () => {
     <div className={styles.overlay}>
       <div className={styles.container}>
         <input className={styles.block} placeholder="Логин" />
-        <input type='password' className={styles.block} placeholder="Пароль" />
+        <input type="password" className={styles.block} placeholder="Пароль" />
         <button
           className={`${styles.block} ${styles.button}`}
           onClick={onLogIn}
