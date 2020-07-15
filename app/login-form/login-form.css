@@ -1,0 +1,29 @@
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #B6D554
+}
+
+.container {
+    background: white;
+    margin: auto;
+    width: 360px;
+    box-shadow: 0 0 4px 1px #888888;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.block {
+    margin: 8px 10% 8px 10%;
+    width: 80%;
+    padding: 1em;
+    border: solid 1px darkgrey;
+    box-sizing: border-box;
+}
+
+.button {
+    background: #f0f0f0;
+    text-align: center;
+    border: solid 1px darkgrey;
+}

@@ -1,0 +1,40 @@
+body {
+    background: #f0f0f0;
+}
+.container {
+    margin: 10px;
+    padding: 0;
+}
+.header{
+    /*margin-top: 10px;*/
+    background: gainsboro;
+}
+.content {
+    background: white;
+    margin: 0;
+}
+h2 {
+    margin: 0;
+    display: inline-block;
+    background: red;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 16px;
+}
+ul {
+    list-style: none;
+    padding: 10px 5px;
+    margin: 0;
+}
+
+li {
+    display: inline;
+    padding: 5px;
+    text-overline: none;
+    white-space: nowrap;
+}
+
+a {
+    color: dimgrey;
+}
