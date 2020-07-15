@@ -1,35 +1,42 @@
 import React from "react";
 import { Link, Switch, Route, useRouteMatch } from "react-router-dom";
 import styles from "./app-contents.css";
+import { articles } from "./articles";
 
+const NavBar = () => {
+  let match = useRouteMatch();
 
-const navBarItems = [
-  { name: "вращение", path: "rotation" },
-  { name: "отведение", path: "abduction" },
-  { name: "приведение", path: "cast" },
-  { name: "пронация", path: "pronation" },
-  { name: "разгибание", path: "extension" },
-  { name: "сгибание", path: "bending" },
-  { name: "супинация", path: "supination" }
-];
+  return (
+    <div>
+      <div className={styles.header}>
+        <h2>метки</h2>
+      </div>
+      <div className={styles.content}>
+        <ul>
+          {articles.map(({ name, path }) => (
+            <li key={path}>
+              <Link to={`${match.url}/${path}`}>{name}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+};
 
 export const AppContent = () => {
   let match = useRouteMatch();
 
   return (
     <div className={styles.container}>
-      <div className={styles.header}>
-        <h2>метки</h2>
-      </div>
-      <div className={styles.content}>
-        <ul>
-          {navBarItems.map(({ name, path }) => (
-            <li key={path}>
-              <a href={`#${path}`}>{name}</a>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <NavBar />
+      <Switch>
+        {articles.map(({ path, Component }) => (
+          <Route path={`${match.url}/${path}`} key={path}>
+            <Component />
+          </Route>
+        ))}
+      </Switch>
     </div>
   );
 };

@@ -2,8 +2,9 @@ body {
     background: #f0f0f0;
 }
 .container {
-    margin: 10px;
+    margin: 10px auto;
     padding: 0;
+    width: 60%;
 }
 .header{
     /*margin-top: 10px;*/

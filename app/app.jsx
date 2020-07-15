@@ -11,7 +11,7 @@ export const App = () => {
         <Route path="/content">
           <AppContent />
         </Route>
-        <Route exact path="/">
+        <Route path="/">
           <LoginForm />
         </Route>
       </Switch>
